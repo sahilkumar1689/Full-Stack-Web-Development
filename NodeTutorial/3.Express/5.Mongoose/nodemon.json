@@ -1,0 +1,17 @@
+{
+  "verbose": true,
+  "ignore": [
+    "node_modules/*",
+    "public/*",
+    "*.test.js",
+    "*.json",
+    ".git",
+    "*.md",
+    "*.log",
+    "*.txt",
+    "*.css",
+    "*.html"
+  ],
+  "watch": ["*.js", "src/*", "routes/*", "controllers/*", "models/*"],
+  "ext": "js"
+}

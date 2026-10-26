@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDoList</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="heading">TO DO LIST:</div>
+        <div class="input">
+            <form action="#">
+                <label for="task">Enter Your Task:</label><br>
+                <input type="text" placeholder="Enter Task" id="task" required><br>
+                <label for="date">Enter Completion Date:</label><br>
+                <input type="date" placeholder="Enter date" id="date" required><br>
+                <input type="submit" id="submitBtn" value="Add List" style="background-color: lightgreen;">
+            </form>
+        </div>
+        <div id="contentHeading">Your Task Lists:</div>
+        <div class="content">
+            <table border="1px">
+                <thead>
+                    <tr>
+                        <td>sr.no</td>
+                        <td>Task Lists:</td>
+                        <td>Task Completion Date:</td>
+                        <td>Remove</td>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+<script src="Script.js"></script>
+</html>

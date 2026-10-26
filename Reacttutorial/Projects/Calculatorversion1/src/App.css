@@ -1,0 +1,97 @@
+.Container{
+    width: 23%;
+    height: 80%;
+    border: 2px solid rgb(95, 95, 95);
+    background-color: #1E1D1D;
+    border-radius: 10px;
+}
+
+@media screen and (max-width:1360px) {
+    .Container{
+        width: 30%;
+    }
+}
+@media screen and (max-width:1050px) {
+    .Container{
+        width: 40%;
+    }
+}
+@media screen and (max-width:775px) {
+    .Container{
+        width: 60%;
+    }
+}
+@media screen and (max-width:520px) {
+    .Container{
+        width: 80%;
+    }
+}
+@media screen and (max-width:400px) {
+    .Container{
+        width: 100%;
+    }
+}
+
+.headerContent{
+    width: 100%;
+    height: 7%;
+    /* border:2px solid white; */
+    color: rgb(233, 228, 228);
+    font-size: 20px;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.headerContent span{
+    margin-left: 10px;
+}
+
+.inputContainer{
+    width: 100%;
+    height:170px;
+    /* border:2px solid white; */
+    display: flex;
+    align-items: end;
+}
+
+input{
+    width: 97%;
+    height: 70px;
+    border: 1px solid rgb(151, 151, 151);
+    margin:5px;
+    border-radius: 5px;
+    background-color: #302f2f;
+    color: white;
+    font-size: 25px;
+    padding-left: 10px;
+}
+
+input:hover{
+    border:2px solid whitesmoke;
+}
+
+.buttonContainer{
+    width: 100%;
+    height: calc(93% - 170px);
+    /* border: 2px solid white; */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2px;
+    padding: 5px;
+}
+.btn{
+    width: 24.5%;
+    /* border: 2px solid white; */
+    border-radius: 5px;
+    color: rgb(242, 241, 241);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    box-shadow: 1px 1px 10px rgb(21, 21, 21);
+    cursor:pointer;
+    background-color: rgb(55, 55, 55);
+}
+.btn:hover{
+    background-color: rgb(67, 67, 67);
+}

@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  /* border: 2px solid black; */
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  padding: 25px;
+}
+
+.inputContainer {
+  width: 75%;
+  text-align: center;
+  padding: 10px;
+  /* border: 2px solid black; */
+}
+
+.inputForm {
+  margin: 10px;
+  /* border: 2px solid black; */
+}
+.inputForm input {
+  padding: 10px 200px;
+  border-radius: 5px;
+  font-size: 20px;
+}
+.inputForm button {
+  padding: 14px 20px;
+  border-radius: 5px;
+  margin-left: 10px;
+  background-color: lightgreen;
+}
+
+.todoContainer {
+  width: 75%;
+  padding: 25px;
+  margin-top: 10px;
+  flex-flow: column wrap;
+  /* border: 2px solid black; */
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.todoItem {
+  display: flex;
+  width: 70%;
+  justify-content: space-between;
+  padding: 0px 5px;
+  border-radius: 10px;
+  border: 2px solid black;
+}
+.todoNameContainer {
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+  flex: 1;
+  font-size: 20px;
+  /* border: 2px solid black; */
+}
+.lineThrough {
+  text-decoration: line-through;
+}
+.borderEdit {
+  border: 1px solid black;
+}
+.btnContainer button {
+  margin-left: 10px;
+  margin-top: 5px;
+  padding: 15px 20px;
+  border-radius: 5px;
+}
+
+.editInput {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  font-size: 20px;
+  /* text-decoration: line-through; */
+}

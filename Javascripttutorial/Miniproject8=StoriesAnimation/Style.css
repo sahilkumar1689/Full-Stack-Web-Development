@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height:100vh;
+    background-color: floralwhite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    width: 350px;
+    height: 500px;
+    border: 2px solid black;
+    border-radius: 5px;
+    position: relative;
+}
+
+.storiesContainer{
+    width: 100%;
+    height: 24%;
+    border-bottom: 2px solid black;
+    padding: 10px;
+    white-space:nowrap;
+    overflow: scroll;
+    scrollbar-width: none;
+
+}
+.storie{
+    width:80px;
+    height: 80px;
+    border-radius: 50%;
+    border:2px solid black;
+    display: inline-block;
+    margin-right:16px;
+    overflow: hidden;
+}
+.storie img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.showStorieContainer{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    border-radius: 5px;
+    display: none;
+}
+.showStorieContainer img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 5px;
+}
+.scrollContainer{
+    width: 100%;
+    height: 7px;
+    border:1px solid white;
+    background-color: rgb(214, 214, 214);
+    position: absolute;
+    top: 0px;
+    z-index: 10;
+}
+.scroller{
+    width:5%;
+    height: 100%;
+    background-color: grey;
+    /* transform: scale(41,1); */
+    animation-name: loader;
+    animation-duration: 10s;
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
+}
+@keyframes loader{
+    0%{
+        transform: scale(1,1);
+    }
+    100%{
+        transform: scale(41,1);
+    }
+}
+
+

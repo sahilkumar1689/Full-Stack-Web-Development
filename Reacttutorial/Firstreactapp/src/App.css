@@ -1,0 +1,18 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.parentDiv{
+  width: 100vw;
+  height: 100px;
+  border:2px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(217, 253, 241);
+}
+.parentDiv h1{
+  color: rgba(2, 253, 253, 0.727);
+}

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          // colors: {
+          //     'blue': '#1fb6ff',
+          //     'purple': '#7e5bef',
+          //     'pink': '#ff49db',
+          //     'orange': '#ff7849',
+          //     'green': '#13ce66',
+          //     'yellow': '#ffc82c',
+          //     'gray-dark': '#273444',
+          //     'gray': '#8492a6',
+          //     'gray-light': '#d3dce6',
+          // },
+          extend: {
+            colors: {
+              pinky: "#ff49db",
+            },
+          },
+        },
+      };
+    </script>
+    <title>Index1</title>
+  </head>
+  <body>
+    <!-- 1. Tailwind Css = Tailwind is a utility first framework that empower developers to create websites more effectively. Utility first framework means it does'nt provide the predefined UI kit for the elements for buttons or navbar,etc.Instead of these it provides a comprehensive set of utility classes that you can directly apply in your html.Tailwind also provide the customizing features it means we can easily customize these utility classes according to our needs to build custom components desigs.It allow you to create your website without writing custom css or leaving your html file.-->
+
+    <!-- Now there are many different ways to use tailwind css: -->
+
+    <!-- 1. Play CDN link = In this you only need to add the script cdn link it the head and after that you can simply write you tailwind code easily.But it is only usefull in personal development purpose only not for production use it means you can easily use in your local browser but not publish on github.-->
+
+    <!-- 2. Tailwind CLI = It is production friendly and most easy step to use tailwind for production website.We discuss later how to use it. -->
+    <!-- 3. Tailwind postCSS = Also production friendly. -->
+    <!-- 4. Based On framework Setup = In this we setup our tailwind according to the framework we used e.g. react,angular,next.js,typeScript,etc.-->
+
+    <!-- Note = 1. If you want to use tailwind for learning purpose or any personal purpose simply use play cdn link.
+    2. But if you want to use tailwind for production website with vanilla html,css,javascript technology use either CLI or postCSS.
+    3. But if you want to use tailwind with any framework use specific project setup guide.
+    -->
+
+    <!-- 1. Color Utility classes = Used to give color to the text. -->
+
+    <!-- syntax:
+        class = "text-color_Name-darkness_Level";
+
+        where;text= It represent action applied on text content.
+        color_Name = Color name 
+        darkness_Level = tailwind have 50,100,200,300,400,500,600,700,800,900. lighter to darker.
+    -->
+    <!-- e.g.: -->
+    <!-- <p class="text-green-500">Hello World</p>
+    <h1 class="text-yellow-300">Tailwind Color Property</h1> -->
+
+    <!-- (i) You can also set opacity by giving arbitary value inside square brackets and divided by darkness level.
+    Syntax:
+    class = "text-color_Name-darkness_Level/[opacityValue]";
+    -->
+    <!-- e.g.: -->
+
+    <!-- <p class="text-red-900/[0.5]">Opacity Value</p> -->
+
+    <!-- (ii) There are two ways to use custom color in tailwind:-->
+
+    <!-- 1. Using Arbitary Values = In this you only need to write the custome color code or name in the square brackets at the place of colorName or darknessLevel.-->
+
+    <!--e.g.: -->
+    <!-- <p class="text-[rgb(0,0,0)]">Custom Color</p> -->
+
+    <!-- 2. Using Configuratoin = In this you need to add custom value inside the theme object and extended object in the key-value pair form.If you want to over write the tailwind properties then add your custom properties inside the theme object or if you want to add your custom properties on the top of tailwind then add inside extend.
+    e.g.:
+    -->
+
+    <!-- (i) Overwrite the tailwind color properties = See in the head tag -->
+
+    <!-- Clearly see this proprety can't applied because we overwrite the properties of tailwind now we only use those color which we add in theme object. -->
+    <!-- <p class="text-red-900">Red Can't applied</p>
+
+    <p class="text-pink">Only Custom values applied</p> -->
+
+    <!-- (ii) But if you want tailwind properties and also your custom properties then add your custom color inside extend object.
+        e.g.: see head tag.
+    -->
+    <p class="text-red-500">Red applied</p>
+
+    <p class="text-pinky">Custom values applied</p>
+
+    <!-- 2. Background Color = It is similar to the text color.
+    Syntax:
+    class = "bg-color_Name-level";
+    -->
+    <!-- e.g.: -->
+    <p class="bg-black text-white">No need to add level in classic color.</p>
+    <p class="bg-red-900 text-yellow-300">Need to add in non classic color</p>
+
+    <!-- (i) You can also gave opacity similar to the color property. -->
+
+    <!-- (ii) You can also gave custom color by using arbitary values or configuration color. -->
+
+    <!-- 3. Text Properties : -->
+
+    <!-- (i) Text Alignment = It is exactly similar to the "text-align" property in the vanilla css.
+    Syntax:
+    class = "text-property_Name"
+
+    where property_Name = left,right,center,start,end,justify.4
+    e.g.:
+    -->
+    <p class="text-white bg-black text-center">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, natus
+      assumenda sunt veniam facilis nihil culpa cum, dolorem reiciendis cumque
+      fuga molestiae, dolore doloribus architecto illum iste dolor blanditiis
+      eligendi?
+    </p>
+
+    <!-- (ii) Text Decoration = Used to gave underline,overline,line-through,no-underline.
+    e.g.:
+    -->
+    <p class="bg-green-900 text-white">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi, quis esse
+      perferendis natus nobis ducimus, error aperiam voluptate et praesentium
+      exercitationem
+      <span class="underline">Lorem ipsum dolor sit amet.</span>facilis magnam
+      tempora? Pariatur ducimus perspiciatis asperiores quidem possimus.
+    </p>
+
+    <!-- (iii) Text decoration color = You can also set the color of the text-decoration.-->
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi, quis esse
+      perferendis natus nobis ducimus, error aperiam voluptate et praesentium
+      exercitationem
+      <span class="underline decoration-green-500"
+        >Lorem ipsum dolor sit amet.</span
+      >facilis magnam tempora? Pariatur ducimus perspiciatis asperiores quidem
+      possimus.
+    </p>
+    <!-- (iv) Text decoration style and width = You can also set the style of the text-decoration solid, double dotted dashed,etc. and also gave width to the decoration line to 1,2,4,8-->
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi, quis esse
+      perferendis natus nobis ducimus, error aperiam voluptate et praesentium
+      exercitationem
+      <span
+        class="underline decoration-green-500 decoration-double decoration-2"
+        >Lorem ipsum dolor sit amet.</span
+      >facilis magnam tempora? Pariatur ducimus perspiciatis asperiores quidem
+      possimus.
+    </p>
+
+    <!-- (v) Text transform = Used to convert the text in upper , lower,capitalize case. -->
+    <h2 class="uppercase">uppercase</h2>
+    <h2 class="lowercase">lowercase</h2>
+    <h2 class="capitalize">capitalize</h2>
+
+    <!-- (vi) text-wrap -->
+
+    <!-- (vii) whitespace-nowrap -->
+
+    <!-- 4. Font Classes: -->
+
+    <!-- (i) Font size = You can give the text-sizes to xs,sm,base,lg,xl,2xl to 9xl. You can check their corresponding values in tailwind documentation.-->
+    <br /><br />
+    <h5 class="text-xs">Extra Small</h5>
+    <h5 class="text-sm">Small size</h5>
+    <h5 class="text-base">Medium size</h5>
+    <h5 class="text-lg">Large size</h5>
+    <h5 class="text-xl">Extra Large</h5>
+
+    <!-- 1. You can also gave arbitary or custom values using square brackets.
+    e.g.: -->
+    <h4 class="text-[50px]">Arbitary Value</h4>
+
+    <!-- 2. You can also customize your font-size values by adding in the theme->font-size object or extend also. -->
+
+    <!-- (ii) Font family = You can set your font-family to sans,serif,mono,etc.-->
+
+    <p class="font-sans">Sans font</p>
+    <p class="font-serif">Serif Font</p>
+    <p class="font-mono">Mono Font</p>
+
+    <!-- (iii) Font Weight =Set font weight to thin(100),extralight(200),light(300),normal(400),medium(500),semibold(600),bold(700),extrabold(800),black(900) -->
+    <p class="font-semibold">SemiBold</p>
+    <p class="font-bold">Bold</p>
+    <p class="font-extrabold">Extra Bold</p>
+
+    <!-- (iv) font-italic = Only italic or non-italic -->
+
+    <!-- (v) line height = In this you set line height to tight,snug,noraml,relaxed,loose,3 to 10.Corresponding value check on documentation. -->
+    <ul class="leading-loose">
+      <li>Ist</li>
+      <li>2nd</li>
+      <li>3rd</li>
+    </ul>
+    <br /><br />
+
+    <!-- (vi) List Style type = In this you give none,disc,decimal,etc. -->
+    <ul class="list-disc">
+      <li>Ist</li>
+      <li>2nd</li>
+      <li>3rd</li>
+    </ul>
+    <br /><br />
+
+    <!-- (vii) List style position = Set position to inside or outside. -->
+    <ul class="list-inside">
+      <li>Ist</li>
+      <li>2nd</li>
+      <li>3rd</li>
+    </ul>
+    <br /><br />
+
+    <!-- (viii) List style Image = You can set the image of the list marker. -->
+    <!-- syntax:
+        class = "list-image-[url(copy_Path)]"
+    -->
+  </body>
+</html>

@@ -1,0 +1,8 @@
+1. Make a parent folder and go inside them by using "cd" command.
+2. After that open terminal add write command "npm create vite@latest"
+3. After that enter the project name.After that if they asked for package manager name simply click enter.
+4. After that select the framework.After that select the language.
+5. They create a folder for you.
+6. Go inside that folder using "cd" command.
+7. And run "npm install" command in terminal.
+8. After that simply write "npm run dev".This command always you need to run while see the updates on server.

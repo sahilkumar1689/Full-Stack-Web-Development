@@ -1,0 +1,223 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*  Pseudo classes = It is used to define the special state of any element.We can also combine these classes with the css selector to add effects on them.
+Some of the most popular classes are:
+1. :hover = It is used to add effects on our element whenever our mouse pointer over it.
+*/
+.hov:hover {
+  color: rgb(244, 129, 6);
+  width: 100px;
+}
+
+/* 2. :active = It is used to add effects on our elements whenever our mouse click it.*/
+.hov:active {
+  background-color: aquamarine;
+}
+
+/* 3. :focus = It is used to add effects on our elements which is currently focused by the user.It is mostly used in the forms.*/
+.focus:focus {
+  border: 4px groove black;
+}
+
+/* 4. :visited = It is used to add effects only on that link which is already visited.*/
+
+.visited:visited {
+  color: red;
+}
+
+/* 5. :not() = It is used to add effects only on that element which not select the specific selector.*/
+
+h1:not(.temp) {
+  color: green;
+}
+
+/* Pseudo Elements = Basically these are the keywords added to the selectors to add css at a specific place of a selector. 
+Some of the pseudo elements are:
+1.::first-line = Used to add effect only on the first line of your selector.
+*/
+p::first-line {
+  color: yellowgreen;
+}
+
+/* 2.::first-letter = Used to add effect only on the first word of your selector. */
+p::first-letter {
+  color: rgb(252, 107, 10);
+}
+
+/* 3.::before = Used to add element before the selected elements.*/
+p::before {
+  content: "Hello Before";
+}
+
+/* 4.::after = Used to add element after the selected elements.*/
+p::after {
+  content: "Hello After";
+}
+/* 5.::marker = Used to select the bullet points.*/
+ul li::marker {
+  color: red;
+  margin-left: 50px;
+}
+/* 6. ::selection = Used to add css only on the selected or draged part of the document. */
+::selection {
+  background-color: rgb(111, 220, 213);
+}
+
+/* Transition Property = It is used to control the way in which transition takes place between two states of an elements.For example, when we hover our mouse pointer on any element then we want to change their size by using pseduo classes but with the combination of transition property we make the change visually appealing to the user and hence gave them better user experience.
+Some of the transition properies are:
+
+1. transition-property = This property allow you to select the css property which we want to change during the transition effects.
+e.g.:
+transition-property = all | none | propertyName_1, ... , propertyName_N.
+Where ; all = It means all css property need to be changed.
+none = Not property.
+property_Name = Used to select any specific properties separeated by commas.
+
+2. transition-duration = This property allow you to define how long it will take to complete your transition.Values in sec or ms.
+
+3. transition-timing-function = This property allow you to define the speed or the manner to change the transition.
+Values = linear | easy-in | easy-out | easy-in-out | step-start | step-end ,etc.
+
+4. transiton-delay = This property allow you to define the amount of time to wait for the transition.
+
+We also have a short hand of all these properties:
+transition = <property_name> <duration> <timing-function> <delay>
+
+*/
+
+.transition {
+  height: 100px;
+  width: 100px;
+  background-color: green;
+  /* position: relative; */
+  /* left: 50px;
+  top: 50px; */
+  box-shadow: 5px 5px 5px rgb(100, 100, 100);
+
+  transition-property: height;
+  transition-duration: 1s;
+  transition-timing-function: ease-in;
+  transition-delay: 0.5s;
+
+  /* transition: height 2s ease-in 1s; */
+}
+.transition:hover {
+  height: 110px;
+}
+
+/* 2D Transform Property =  These property used to move,rotate,scale,skew elements.
+
+Some of the function are:
+1. translate(x-axis,y-axis) = It is used to move the element along their x-axis and y-axis.
+*/
+.transform {
+  width: 100px;
+  height: 100px;
+  /* position: relative; */
+  left: 10px;
+  top: 100px;
+  background-color: cyan;
+}
+.transform:hover {
+  transform: translate(1px, -4px);
+}
+
+/* 2.  rotate() = Used to rotate the element.*/
+
+.rotate {
+  width: 100px;
+  height: 100px;
+  /* position: relative; */
+  left: 10px;
+  top: 150px;
+  background-color: rgb(0, 26, 255);
+}
+.rotate:hover {
+  transform: rotate(90deg);
+}
+
+/* 3. scale(width,height) = Used to increase or decrease the width or height from its original. 
+
+Also have:
+scaleX(),scaleY()
+*/
+.scale {
+  width: 100px;
+  height: 100px;
+  /* position: relative; */
+  left: 10px;
+  top: 200px;
+  background-color: rgb(0, 26, 255);
+}
+.scale:hover {
+  transform: scale(2, 2);
+}
+
+/* 4. skew() = Used to skew the element from x-axis and y-axis.
+Also have:
+skewX(),skewY()
+*/
+
+.skew {
+  width: 100px;
+  height: 100px;
+  /* position: relative; */
+  left: 10px;
+  top: 250px;
+  background-color: rgb(0, 26, 255);
+}
+.skew:hover {
+  transform: skew(20deg, 30deg);
+}
+
+/* 5. matrix(scaleX,skewY,skewX,scaleY,translateX,translateY) = Used to combine six function with each other.*/
+
+/* Animations = It is a technique to change the behaviour or appearence of various elements in our web pages.The animation take place in two parts one part contains the css properties which need to be applied on an elements called keyframes and the second part contains the anumation properties for specific element.
+You can also consider the animation similar to the functions in programming language because it also work on the similar template, it contains the css properties which applied on any specific element and hence increase the code reusability.
+
+Some of the properties of the animations are:
+1. animation-name = This property take the keyframe name as a value which specify the animation.
+2. animation-duration = Used to specify the time in which a complete animation cycle is complete.
+3. animation-timing-function = Used to specify the speed or the manner the in which the animation takes place.e.g. = linear,ease,ease-in,ease-out,ease-in-out,etc.
+4. animation-delay = Used to specify the delay to start the animation.
+5. animation-iteration-count = Used to specify the numbers of times an animation will repeat.
+6. animation-fill-mode = It defines how animations are applied before and after the animation.Values = none,forward,backward,both.
+7. animation-direction = Direction of the animation.
+Values = normal,reverse,alternative,alternative-reverse.
+8. animation-play-state = It specify wheter the animation is running or paused.
+*/
+
+.animation {
+  width: 200px;
+  height: 200px;
+  background-color: rgb(252, 255, 255);
+  position: relative;
+  top: 50px;
+  left: 50px;
+  border: 20px solid rgb(241, 204, 204);
+  border-radius: 50%;
+  border-top-color: cyan;
+
+  animation-name: loader;
+  animation-duration: 2s;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+}
+.animation:active {
+  animation: none;
+}
+@keyframes loader {
+  0% {
+    transform: rotate(0deg);
+  }
+  60% {
+    border-right-color: cyan;
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

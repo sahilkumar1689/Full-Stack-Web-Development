@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css tutorial</title>
+
+    <!-- Internall css example: -->
+    <style>
+        /* p{
+            color:rgb(255, 213, 0);
+        } */
+        button{
+            background-color: blue;
+        }
+    </style>
+    
+
+    <!-- External css: -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <!-- 1. CSS = It stands for cascading style sheet.It is a language which is used to describe the style of a document. -->
+
+
+    <!-- 2. Different ways to write the css = There are three ways to write the css in our website:
+    1. Inline css = Basically in this we write css by using the style attribute for every tag individually.
+    e.g. :  -->
+    <h1 style="color:red">This is a inline style.</h1>
+
+    <!-- 2. Internall css = It this we write our css inside the style which palced in the head tag.
+    e.g.: -->
+    <p>This is internall css.</p>
+
+    <!-- 3. External css = In this we write our css in the another file and provide their link in the head tag using the link tag. 
+    e.g. : -->
+    <h2>This is a external css.</h2>
+
+    <!-- Note = 1. Not use more than one styling technique in your html.
+    2. The priority of the stying technique is decreases in the order of  inline->internal->external. -->
+
+
+    <!-- 3. Syntax = The basic syntax of writting the css is:
+    selector{
+        property1:value;
+        ...
+        property_n:value_n
+    } 
+    
+    where; selector= Basically selector is used to select any tag from your html file to apply styling on it.Now the selector can be the tag name,id value,class value.
+    Types of selector = Generally we have four type of selector:
+    1. *(asterisk) selector = It is also called universal selector.It is used to select whole tags in the html file.e.g. = *{// p_v pair;}
+
+    2. element_name selector = In this we directly use the tag name to apply style on it.But it select all the elements which are present in the file with that name.
+    e.g. = h1{// p_v pair;}
+
+    3. # selector = It is also called id selector because it select the tag by their unique id value.e.g. = #id_value {// p_v pair;}
+
+    4. . selector = It is also called class selector because it select the multiple tags with their shared class value.e.g. = .class_value {// p_v pair;}
+    
+    property_name=The name of the property we wanna to apply it.
+    value = The value of the corresponding property.
+    -->
+    
+
+
+    <!-- 3.Different properties in the css = Go to style file. -->
+
+    <!-- Note = Never use decimal number in id.Specially in the case of css. -->
+    <h4 id ="one">COLOR EXAMPLE.</h4>
+    <h4 id ="two">Rgb COLOR EXAMPLE.</h4>
+    <h4 id ="three">Hex COLOR EXAMPLE.</h4>
+
+    <!-- Practice set 1: -->
+    <div id="box">I'm div.</div>
+
+    <h1 class="heading">Heading1</h1>
+    <h2 class="heading">Heading2</h2>
+    <h3 class="heading">Heading3</h3>
+
+    <button style="background-color:pink">click me</button>
+
+    <p id="align">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias quo odit maiores quos. Placeat reiciendis aperiam aspernatur sapiente, vel libero, voluptates doloribus optio hic quae sint saepe nemo soluta ex. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel ex labore ipsa asperiores quibusdam, quae veritatis. Autem dolorem ea incidunt officia consequatur soluta quibusdam, itaque impedit vel asperiores, placeat illum!</p>
+
+    <h1 id="decor">Text-Decoration</h1>
+    <!-- Practice set 2: -->
+    <h1 id="temp">Heading</h1>
+    <div id="outer">
+        outer
+        <div id="inner">inner</div>
+    </div>
+
+</body>
+</html>

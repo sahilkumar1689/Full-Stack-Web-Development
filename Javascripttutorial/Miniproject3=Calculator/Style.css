@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(47, 47, 47);
+}
+
+#container {
+  width: 21%;
+  height: 75.5%;
+  border: 2px solid rgb(110, 109, 109);
+  padding: 5px;
+  background-color: rgb(30, 29, 29);
+  /* background-color: black; */
+  box-shadow: 1px 1px 20px 5px #434343;
+  border-radius: 10px;
+}
+@media screen and (max-width: 1370px) {
+  #container {
+    width: 30%;
+  }
+}
+@media screen and (max-width: 1066px) {
+  #container {
+    width: 40%;
+  }
+}
+@media screen and (max-width: 788px) {
+  #container {
+    width: 60%;
+  }
+}
+@media screen and (max-width: 532px) {
+  #container {
+    width: 100%;
+  }
+}
+
+.header {
+  width: 100%;
+  height: 18%;
+  /* border: 2px solid white; */
+}
+
+.headerContent {
+  width: 100%;
+  height: 50%;
+  color: rgb(233, 228, 228);
+  font-size: 20px;
+  padding-left: 10px;
+  padding-top: 10px;
+  /* border: 2px solid white; */
+}
+.headerContent span {
+  margin-left: 10px;
+}
+
+.input {
+  width: 100%;
+  height: 15%;
+  /* border: 2px solid white; */
+  position: relative;
+  background-color: black;
+}
+
+.input input {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 0px;
+  border: none;
+  outline: none;
+  color: white;
+  background-color: rgb(48, 47, 47);
+  font-size: 20px;
+  border-radius: 7px;
+  /* direction: rtl; */
+  padding-left: 10px;
+  box-shadow: 2px 2px 20px rgb(27, 27, 27);
+}
+.input input:hover {
+  border: 2px solid rgb(248, 232, 232);
+  border-radius: 7px;
+}
+
+.buttons {
+  width: 100%;
+  height: 65%;
+  /* border: 2px solid white; */
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 2px;
+  column-gap: 2px;
+  padding: 2px;
+  margin-top: 10px;
+}
+
+.btn {
+  width: 24.4%;
+  /* border: 2px solid white; */
+  border-radius: 5px;
+  color: rgb(242, 241, 241);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  box-shadow: 1px 1px 10px rgb(21, 21, 21);
+  cursor: pointer;
+}
+
+#equal {
+  background-color: rgb(55, 148, 230);
+  color: black;
+  font-size: 30px;
+}
+#equal:hover {
+  background-color: rgb(39, 138, 224);
+}
+
+.category1Btn {
+  background-color: rgb(67, 67, 67);
+}
+.category1Btn:hover {
+  background-color: rgb(47, 47, 47);
+}
+
+.category2Btn {
+  background-color: rgb(47, 47, 47);
+}
+.category2Btn:hover {
+  background-color: rgb(67, 67, 67);
+}

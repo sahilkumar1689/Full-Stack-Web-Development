@@ -1,0 +1,44 @@
+1. Firstly Make a folder and go inside that forder using "cd" command.
+2. For version 3 = After that run the "npm install -D tailwindcss" command in the terminal.
+2. For version4 = "npm install tailwindcss @tailwindcss/cli" in terminal.
+
+3. In version 4 no need to do it = After that run the "npx tailwindcss init" command in the terminal.
+
+4. In version 4 no need to do it = After that go inside the "configuration.js" file and replaces the "content:[]," it with "content: ["./src/**/*.{html,js}"],".
+
+5. After that create a folder with name "src" and create a "input.css" file and inside that file copy the following content:
+In version 3:
+"@tailwind base;
+@tailwind components;
+@tailwind utilities;"
+
+In version 4:
+@import "tailwindcss";
+
+6. After that create empty file with the name called "output.css" with in the "src" folder and also create a "index.html" file and link it with the "output.css" file.
+
+7. After that go inside the "package.json" file and add the following content:
+"
+"scripts": {
+    "watch":"npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch"
+  },
+
+"
+8. After that you simply need to write the "npm run watch" command in the terminal.
+
+9. After that write your tailwind code inside the html file and see changes using live server extension.
+
+// Additionals:
+
+1. Write command "npm install -D prettier prettier-plugin-tailwindcss" for prettier download.
+2. Make a file outside with name "prettier.config.js" 
+3. Paste the following code inside it:
+"
+// prettier.config.js
+module.exports = {
+    plugins: ['prettier-plugin-tailwindcss'],
+}
+
+2. Try to use flowbite.com , material-tailwind.com , tailwindComponents.com
+
+"

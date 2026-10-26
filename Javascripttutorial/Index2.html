@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index2</title>
+    <link rel="stylesheet" href="Style1.css">
+</head>
+<body>
+    <!-- 1. in-line event handler type1.-->
+    <button onclick="this.innerHTML = 'Thank You'; ">click me</button>
+    <br>
+    <!-- 2. in-line event handler type2= You can also write a function i js file and call it in the inline js. -->
+    <button onclick="func(this)">click me1</button>
+    <br>
+    <!-- 3. External Event Handler: -->
+    <button id="external">click me</button>
+
+    <!-- 4. Updated approach: -->
+    <button id="updated">click me</button>
+
+    <!-- 5. Event objects: -->
+    <p id="evobj">Event Objects</p>
+
+
+    <!-- Practice Problems: -->
+    <h1>Practice Problems:</h1>
+    <!-- 1.Toggle Switch. -->
+
+    <div class="togglecontainer">
+        <div class="toggleswitch"></div>
+    </div>
+
+    <!-- 2.Read input field and print: -->
+    <input type="text" id="inputfield">
+    <button class="submitbtn">submit</button>
+    <p id="enterkeytext"></p>
+    <p id="entertext"></p>
+
+
+    </body>
+    <script src="Script5.js"></script>
+</html>

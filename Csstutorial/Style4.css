@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Flex Box Model = It is a powerful layout model that provides an easy and clean way to store the items within a contianer.It is a one dimensional layout model with distrubuted spaces among each items to control their alignmnet structure.The childern of the flex container can be laid out in any direction and also flexible in size,it means their size either grow to fill the unused space or either shrink to avoid the parent overflow.
+Now there are two elements in the flex box mode parent element and the child elements.To make any div a parent element we only need to set their display is flex.After that automatically their inside dives becomes the child elements.
+
+The parent container is divided into two imaginary margins main-axis = x-axis(default) and cross-axis = y-axis(default).
+
+Parent Properties:
+1.flex-direction = This property is used to define in which direction the child elements will palces.It has four values:
+(i) row(default) = directoin left to right
+(ii) row-reverse = direction reverse of main axis right to left. 
+(iii) column = main axis = y-axis and cross=x-axis direction top to bottom.
+(vi) column-reverse.= direction botto to top.
+
+2. flex-wrap = Used to wrap the items.Values = nowrap,wrap,wrap-reverse.
+
+3. flex-flow = It is the short hand of direction and wrap.
+
+4. justify-content = It is used to make changes in items along their main axis.
+Values = flex-start,center,flex-end,space-evenly,space-between,space-around.
+
+5. align-item = It is used to make changes in items along their cross axis.
+Values = flex-start,center,flex-end,space-evenly,space-between,space-around.
+
+6. align-content = It is similar to the align item but it only work for the flex-wraped items.
+Values = flex-start,center,flex-end,space-evenly,space-between,space-around.
+
+7. row-gap = Used to gave specified gap between the items in row.
+8. column-gap = Used to gave specified gap between the items in column.
+9. gap = Short hand property of rowgap-rowcolumn.
+
+
+Child Property:
+1. order = Used to gave change the order of any specific item.
+2. flex-grow = Used to fill the unused spaces.
+3. flex-shrink = Used to avoid the overflow.
+4. flex-basis = It is similar to the width property.It is used to gave the width to the item.
+5. flex = It is the short hand property of grow-shrink-basis.
+6. align-self = It is used to make change in the any specific item along their cross axis.
+
+*/
+
+#container {
+  border: 2px solid black;
+  height: 500px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /* flex-flow: row wrap;  Short hand for direction-wrap. */
+  justify-content: center;
+  align-items: center;
+  column-gap: 10px;
+  row-gap: 10px;
+  gap: 10px 10px; /* Short hand property of rowgap-columngap*/
+  /* align-content: center;   */
+  /* Only work in flex-wrap.It make the content in the specified same direction even after flex wrap. */
+}
+.items {
+  height: 100px;
+  width: 100px;
+  margin: 10px;
+  border: 2px soild black;
+  text-align: center;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 200px;
+  /* flex: 1 1 200px;   It is the short hand property of grow-shrink-basic */
+}
+#item1 {
+  background-color: rgb(178, 178, 229);
+  order: 3;
+  /* flex-grow: 2; */
+}
+#item2 {
+  background-color: rgb(34, 133, 209);
+  order: 1;
+  flex-shrink: 5;
+  align-self: flex-end; /* If align-content is set then it will not work.*/
+}
+#item3 {
+  background-color: rgb(131, 220, 15);
+  order: 4;
+}
+#item4 {
+  background-color: rgb(255, 170, 0);
+  order: 2;
+}
+
+/* Media Query = Used to achieve the responsive design. */
+/* Syntax:
+@media screen and (screen dimensions){
+    // css
+}
+*/
+
+@media screen and (min-width: 1000px) {
+  body {
+    background-color: green;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 999px) {
+  body {
+    background-color: rgb(0, 109, 128);
+  }
+}
+@media screen and (min-width: 0px) and (max-width: 499px) {
+  body {
+    background-color: rgb(214, 221, 15);
+  }
+}
+
+/* You can also add a new css file at a particular screen resolution: */
+/* syntax:
+<link rel="stylesheet" media="screen and (screen dimension)" href="fileName.css"> 
+*/

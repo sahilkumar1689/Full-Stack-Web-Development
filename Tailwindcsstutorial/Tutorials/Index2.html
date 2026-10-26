@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Index2</title>
+  </head>
+  <body>
+    <!-- 1. Box Sizing Property = It is used to calculate the total width and height in effective manner.It has two value box-border (used to adjust the border width inside the total width and height) and box-content (used to calculate the height and width =width + padding + border).
+    e.g.:
+    -->
+    <div class="h-32 w-32 p-4 border-4 border-black mb-[10px]"></div>
+    <div class="h-32 w-32 p-4 border-4 border-black box-content"></div>
+
+    <!--2. Box Model  = In this we talk about the width ,height,margin,padding,border. -->
+
+    <!-- (i) Width = In tailwind you gave width by using "w" keyword.
+    syntax:
+    class = "w-Specific_Size";
+
+    similar for min or max width:
+    class = "min-w-specific_Size";
+    class = "max-w-specific_Size";
+
+    Note = 1. w-screen = used to give 100vw.
+    2. w-full = used to give 100%.
+    3. For give value in specific pixels or percentage you use arbitary values.
+    -->
+
+    <!-- (ii) height = "h" keyword is used to give height. Rest of the things similar to the width property. -->
+
+    <!-- (iii) Size = "size" keyword is used to give size property. This property is used to give value to both height and width at a same time. Rest of the thing similar to the height and width. -->
+
+    <!-- (iv) Margin = "m" keyword is used to give margin.
+    Syntax:
+    class = "m-specific_Size"     // Used to give margin in all direction
+    class = "mx-specific_Size"    // Used to give margin in only left and right direction.
+    class = "my-specific_Size"    // Used to give margin in only top and bottom direction.
+    class = "mt or mb or ml or mr - specific_Size"   // Used to give margin in only top or bottom or left or right direction respectively.
+    
+    where; specific_Size = You can gave specific size by using arbitary values.
+
+    Note = 1. mx-auto = It is used to center the container from x-axis.
+    2. my-auto = It is used to center the container from y-axis.
+
+    -->
+
+    <!-- (v) Padding = "p" keyword is used to give the padding. Rest of the things similar to the margin property.-->
+
+    <!-- (vi) Border = "border" keyword is used to give all the border properties.
+        syntax:
+        class = "border-2(2px) or 4(4px) or 8(8px)"    // Used to set the width of the border.
+        class = "border-specific_Style"         // Used to set the specific style.
+        class = "border-specific_Color"         // Used to set the color.
+        class = "rounded-specific_size"         // Used to set radius.
+        
+
+    Note = 1. You can also set the top,bottom,left,right, by using t,b,l,r respectively.
+    2. Also give arbitary values.
+
+    -->
+
+    <!-- e.g.: -->
+
+    <div
+      class="w-screen h-[100px] bg-lime-500 border-2 border-solid border-black mt-[10px]"
+    >
+      <div
+        class="size-[50%] bg-yellow-500 border-2 border-solid border-black mx-auto mt-[25px]"
+      ></div>
+    </div>
+
+    <!-- 3. Display Property = Used to set the display of the element to none,hidden,block,inline,inline-block,flex,grid,etc. -->
+    <div class="inline-block">Hello</div>
+    <div class="inline-block">World</div>
+
+    <!-- 4. Float = Used to control the wrapping of content around the element."float" keyword is used.
+    syntax:
+    class = "float-none or left or right or start or end"
+    e.g.:
+    -->
+    <div class="border-2 border-solid border-black">
+      <img
+        src="https://images.unsplash.com/photo-1554629947-334ff61d85dc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=320&q=80"
+        class="size-[100px] rounded-[10px] float-left m-[10px]"
+      />
+      <p class="align-justify">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit quas,
+        debitis obcaecati earum perferendis corrupti minus nemo illo optio vero
+        cum cupiditate eveniet dolores. Corrupti necessitatibus aliquid earum
+        debitis magni perferendis eveniet. Recusandae laborum aperiam fuga
+        corrupti, temporibus voluptate voluptates sunt facilis laudantium soluta
+        facere, cumque expedita rem pariatur fugia.Lorem ipsum, dolor sit amet
+        consectetur adipisicing elit. Quo ea deleniti autem illo dolores aliquam
+        ab, enim cupiditate dignissimos amet fuga distinctio quidem delectus
+        omnis minus. Totam dolores perferendis consequuntur eius, ipsa deleniti
+        vel vitae officiis accusantium nemo suscipit laboriosam doloremque
+        tempore exercitationem tenetur quisquam sit dolorem cupiditate magnam
+        voluptas. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        Praesentium nobis similique minus laudantium voluptatum reprehenderit
+        vero debitis unde, quisquam, at excepturi ratione? Magnam non quae omnis
+        esse temporibus fuga, debitis, sit voluptatem quibusdam adipisci
+        pariatur quo. Unde iure ullam animi recusandae asperiores explicabo amet
+        nulla dolor, nostrum, quo maxime maiores?
+      </p>
+    </div>
+
+    <!-- 5. Postion Property = Used to controll how your elements is positioned.Values static,relative,absolute,fixed,sticky. -->
+
+    <div
+      class="w-full h-[100px] m-[10px] border-2 border-solid border-black relative"
+    >
+      <div
+        class="w-[50px] h-[50px] border-2 border-solid border-black absolute bottom-0"
+      ></div>
+    </div>
+
+    <!-- 6. Visibility = Values visible,invisible,collapse.-->
+
+    <!-- 7. Z-index = 'z' keyword is used.
+    syntax:
+    class = "z-specific_Value"
+    e.g.:
+    -->
+    <div class="container bg-lime-500">
+      <div
+        class="size-[50px] border-[1px] border-solid border-black rounded-[50%] inline-block relative left-[55px] z-30 bg-lime-500"
+      ></div>
+      <div
+        class="size-[50px] border-[1px] border-solid border-black rounded-[50%] inline-block relative left-[38px] z-20 bg-yellow-500"
+      ></div>
+      <div
+        class="size-[50px] border-[1px] border-solid border-black rounded-[50%] inline-block relative left-[20px] z-10 bg-rose-500"
+      ></div>
+      <div
+        class="size-[50px] border-[1px] border-solid border-black rounded-[50%] inline-block relative z-0 bg-blue-500"
+      ></div>
+    </div>
+
+    <!-- 8. Overflow = "overflow" keyword is used.Values hidden,none,scroll,etc.
+    "scrollbar-none" is used to hidden the scroller.
+    -->
+
+    <div
+      class="w-[20%] h-20 border-2 border-solid border-black relative mx-auto overflow-hidden flex flex-col items-center justify-center"
+    >
+      <img
+        src="https://images.unsplash.com/photo-1501196354995-cbb51c65aaea?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=4&w=256&h=256&q=80"
+        class="size-[92px] rounded-[50%] absolute top-[-8px] left-[-21px]"
+      />
+      <h4 class="">Andrew Simon</h4>
+      <span class="">Technical Advisor</span>
+    </div>
+
+    <!-- 9. Object Fit Property = Used to resize the image element."object" keyword is used.
+        object fit = Values none,fill,cover,contain.
+    
+        object Position = Values left,right,top,bottom,center,etc.
+    -->
+
+    <!-- 10. Background Properties = Used to resize the image set in background."bg" keyword used.
+        (i) Backgroung image = You can set background image using arbitary values.
+        syntax:
+        class = "bg-[url(specific_image_url)]"
+
+        (ii) Background size = Values auto,cover,contain.
+
+        (iii) Background Positon = Values left,right,top,bottom,center,etc.
+
+        (iv) Background Repeat = Values repeat,no-repeat,etc.
+
+        (v) Background Attachment = Values fixed,local,scroll,etc.
+    
+    -->
+  </body>
+</html>

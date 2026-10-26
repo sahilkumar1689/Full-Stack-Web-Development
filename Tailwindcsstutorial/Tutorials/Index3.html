@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                screens: {
+                    'sm': {'min': '640px', 'max': '767px'},
+                    // => @media (min-width: 640px and max-width: 767px) { ... }
+
+                    'md': {'min': '768px', 'max': '1023px'},
+                    // => @media (min-width: 768px and max-width: 1023px) { ... }
+
+                    'lg': {'min': '1024px', 'max': '1279px'},
+                    // => @media (min-width: 1024px and max-width: 1279px) { ... }
+
+                    'xl': {'min': '1280px', 'max': '1535px'},
+                    // => @media (min-width: 1280px and max-width: 1535px) { ... }
+
+                    '2xl': {'min': '1536px'},
+                    // => @media (min-width: 1536px) { ... }
+                },
+            }
+        }
+    </script>
+    <title>Index3</title>
+</head>
+<body>
+    <!-- 1. Flex Box Properties = 
+    Parent Properties:
+
+    (i) Flex Direction = Used to set the direction of the child elements.
+    syntax:
+    class = "flex-row or col or row-reverse or col-reverse"
+
+    (ii) Flex wrap = Used to wrap the elements.
+    syntax:
+    class = "flex-wrap or nowrap or wrap-reverse"
+
+    (iii) Justify Content = Used to set the position of the element through x-axis.
+    syntax:
+    class = "justify-center or start or end or evenly or between or around or stretch."
+
+    (iv) Align Items = Used to set the position of the element through y-axis.
+    syntax:
+    class = "items-center or start or end or baseline or stretch."
+
+    (v) Align Content = Used to set the position of the element through y-axis but work only wrap position.
+    syntax:
+    class = "content-center or start or end or evenly or between or around or stretch."
+
+    Child Properties:
+    (i) Flex Grow = Values grow or grow-0;
+    (ii) Flex shrink = Value shrink or shrink-0
+    (iii) Flex Basis = Used to set the size of the individual elements.
+    syntax:
+    class = "basis-specific_Value"
+
+    (iv) Flex = Short hand for both grow , shrink , basis.
+    syntax:
+    class = "flex-1 (1 1 0%) or auto(1 1 auto) or initial(0 1 auto) or none"
+
+    (v) Order = Syntax:
+    class = "order-1 to 12";
+
+    (vi) Gap = Used to set the gap between elements.
+    syntax:
+    class = "gap-specific_value"
+    -->
+    <!-- e.g. = Create a Navbar. -->
+
+    <div class="w-screen h-[50px] border-2 border-solid border-black bg-black shadow-md shadow-grey-500 flex ">
+        <ul class="w-[40%] h-full border-2 border-solid border-white flex text-white list-style-none justify-evenly items-center mx-auto">
+            <li>Home</li>
+            <li>Services</li>
+            <li>Review</li>
+            <li>Contact Us</li>
+        </ul>
+    </div>
+
+
+    <!-- 2. Grid Layout = 
+    (i) Grid columns = Used to set the columns in the grid.
+    syntax:
+    class = "grid-cols-1 to 12";
+    
+    (ii) Grid Column Span = Used to set the spanning of individual element in side the grid.
+    syntax:
+    class = "col-span-1 to 12" or "col-span-full"
+    
+    (iii) Grid Rows = Used to set the rows in the grid.
+    syntax:
+    class = "grid-rows-1 to 12";
+    
+    (iv) Grid Columns span = Used to set the spanning of individual element in side the grid.
+    syntax:
+    class = "row-span-1 to 12" or "row-span-full"
+    
+    (v) Gap,justify-content,align-item = similar to the flex properties.
+    -->
+    <!-- e.g. = Create a cards -->
+    <br><br>
+    <div class="w-[80%] grid grid-cols-4 mx-auto  gap-[10px]">
+        <div class="h-[400px] border-2 border-black border-solid rounded-[16px] shadow-xl shadow-grey-500"></div>
+        <div class="h-[400px] border-2 border-black border-solid rounded-[16px] shadow-xl shadow-grey-500"></div>
+        <div class="h-[400px] border-2 border-black border-solid rounded-[16px] shadow-xl shadow-grey-500"></div>
+        <div class="h-[400px] border-2 border-black border-solid rounded-[16px] shadow-xl shadow-grey-500"></div>
+    </div>
+
+    <!-- 3. Box Shadow = Used to set the shadow of the box.
+    Syntax:
+    class = "shadow-md or lg or xl or 2xl" or "shadow-inner".
+
+    You can also set the color of the shadow:
+    syntax:
+    class = "shadow-specific_Value"
+
+    -->
+
+    <!-- 4. Mix Blend and Backgroung Blend = 
+    Syntax:
+    class = "mix-blend-specific_value" or "bg-blend-specific_Value"
+    -->
+
+    <!-- 5. Filter Effects = Generally used in images.
+    (i) Blur = Used to blur the element.
+    Syntax:
+    class = "blur-sm or md or lg or xl or 2xl"
+
+    (ii) Brightness = Used to set the brightness level.
+    class = "brightness-specific_value"
+
+    etc.
+    -->
+
+
+    <!-- Pseudo Classes = You can apply hover,active or other state using following way.
+    Syntax:
+    class = "hover:Specific_style"
+    -->
+
+    <!-- Media Queries = You can set your custom screen resolution in the theme object see head tag and use by using semicolo. -->
+
+    
+</body>
+</html>

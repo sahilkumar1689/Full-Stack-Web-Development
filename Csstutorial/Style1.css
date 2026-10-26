@@ -1,0 +1,101 @@
+/* External css example: */
+h2{
+    color: green;
+}
+
+
+/* 3.Different properties in the css: */
+
+    
+/* (i) Color property example: */
+#one {
+    color: yellow;
+}
+
+/* (ii) Background color example:  */
+body{
+    background-color: aquamarine;
+}
+
+/* Color System = We mostly used two type of color system rbg and hex. */
+
+/* 1. rgb example:  */
+#two {
+    color: rgb(219, 190, 27);
+    /* rgb(red(0-255),green(0-255),blue(0-255)) */
+}
+
+/* 2. Hex example:  */
+#three {
+    color:#bdc021;
+    /* where # = To represent the hexadecimal
+            first_two_digit = For red(00-ff) 
+            middle_two_digit = For green(00-ff) 
+            last_two_digit = For blue(00-ff) 
+    */
+}
+
+/* Practice set 1: */
+#box{
+    background-color: blue;
+}
+.heading{
+    color:red
+}
+button{
+    background-color: green;
+}
+
+
+/* (iii) text properties: */
+
+/* 1. text-align = It is used to move the text alignment left,right,center.One thing you need to keep that in your mind the text-align w.r.t to their parent tag.Not the window.*/
+#align{
+    text-align: center;
+}
+/* 2. text-decoration=It is used to gave a underline,overline,line-throught,none to the text.It also gave the style,color,size to the line. */
+#decor{
+    text-decoration: red 2px solid underline;
+    /* sequenece does'nt matter. */
+}
+/* 3. font-weight=It is used to set the thickness of the font.We have 4 weight normal,boder,bold,lighter.We can also set the manual values from 100-900. */
+#decor{
+    font-weight: lighter;
+}
+/* 4. font-family =It is used to set the style of the font.We can also set multiple font family separated by commas. */
+#align{
+    font-family:'Courier New', Courier, monospace;
+}
+
+/* Units in css = There are two types of unit in css.Absolute and relative.Here we only talk about absolute.Relative will be cover in further.
+The absolute unit in css is pixels.  96px= 1 inch */
+
+
+/* 5. font-size = It is used to change the size of the font manually. */
+#decor{
+    font-size: 16px;
+}
+/* 6. line-height = It is used to set the spaces between the lines.*/
+#align{
+    line-height: 30px;
+    text-align: left;
+}
+/* 7. text-transform = Used to convert the text into uppercase,lowercase,capitalize,none. */
+#align{
+    text-transform: capitalize;
+}
+
+/* Practice set 2: */
+#temp{
+    text-align: center;
+    text-transform: capitalize;
+}
+*{
+    font-family: 'Times New Roman', Times, serif;
+}
+#outer{
+    font-size: 25px;
+}
+#inner{
+    font-size:10px;
+}

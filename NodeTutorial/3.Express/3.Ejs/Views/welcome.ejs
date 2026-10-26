@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/main.css" />
+    <title>Welcome Page</title>
+  </head>
+  <body>
+    <!-- Including the partials = It is similar to the components in the react,used to resuse the code. -->
+    <%- include('Partials/temp') %>
+
+    <h1>Welcome to Airbnb</h1>
+    <h3>Listed Home:</h3>
+    <ul>
+      <% listedArr.forEach(elem=>{ %>
+      <li><%= elem %></li>
+      <% }) %>
+    </ul>
+    <a href="/host/addHome">Add Home</a>
+  </body>
+</html>

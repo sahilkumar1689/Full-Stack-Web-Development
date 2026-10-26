@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<!-- It stands for documents type.Basically it is used to tell the browser that we are using html5.-->
+<html lang="en">
+  <!-- It is the root of an html documents from which the documents starts.It is the parent of head and the body tag.-->
+
+  <head>
+    <!-- Head tag is the container of the meta tags.-->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basic of html</title>
+    <!-- It is used to gave title to your html page.-->
+  </head>
+
+  <body>
+    <!-- It contains all data which need to be render by the browser.-->
+
+    <!-- 1.HTML = It stands for Hyper Text Markup Language.Basically html is the code that is used to structure a web page and its content.The components which are used to design the structure of website are called html tags.
+
+    2. Html tags = Basically a container which is used to store some contents and some other html tags are called html tags or elements.
+    Most of the html elements have opening and the closing tags with some content between them.e.g. = <p> Some content </p>.
+    But some tags have no content between them. e.g. = <br>,<hr> 
+
+    3. Html is a case in-sensitive language.
+
+    4. We can also add some information or properties to the tag are called attributes.
+    e.g. = <html lang="eg"> , it means the language used is english. -->
+
+    <!-- Some of the html tags are: -->
+
+    <!-- 1.Heading tags = Basically there are six heading tags in the html numbered from <h1 to h6>, where the <h1> = It is used to store the most important heading of your website.It has highest priority.Similarly the <h6> = It is used to store the least important heading of your website.It has lowest priority.The priority decreases from the h1 to h6.
+    Note = Not use h1 tag beacuse of there bigger size.Use h1 tag to store the most important heading and h6 for least important heading.Remaing the size it can we adjust by using the css.-->
+
+    <!-- e.g. : -->
+    <h1 id="1">Hello World.</h1>
+    <h2>Hello World.</h2>
+    <h3>Hello World.</h3>
+    <h4>Hello World.</h4>
+    <h5>Hello World.</h5>
+    <h6>Hello World.</h6>
+
+    <!-- 2. Break Row tags = It is used to add new line.There is no need to add closing tag.
+    e.g. : -->
+    <br />
+
+    <!-- 3. Horizontal Ruler = It is used to add a horizontal line to separete the two contents.There is no need to add closing tag.
+    e.g. : -->
+    <hr />
+
+    <!-- 4. Paragraph tag = Used to add paragraph items.
+    e.g. : -->
+    <p>
+      Lorem,ipsum dolor sit amet consectetur adipisicing elit. Earum voluptates,
+      facere corrupti ullam similiquedolores voluptatem nulla enim commodi vel.
+      Doloremque eligendi provident, sapiente eveniet commodi ut dolorum
+      praesentium odio.
+    </p>
+
+    <br />
+
+    <!-- 5. Pre tag = Basically both the paragraph tag and the pre tag are similar but the only difference is that the pre tag is used to display the things as it is,without ignoring the white spaces.
+    e.g. :-->
+    <pre> Hello     World.</pre>
+
+    <br />
+
+    <!--6. Bold,Italic,Underline tag = Both are used to make the world bold,italic, underline written inside them.They are also used inside the other tag.
+    e.g. :-->
+    <p>
+      <b>Lorem ipsum dolor sit amet consectetur adipisicing elit.</b
+      ><i
+        >Architecto a quaerat corrupti, porro suscipit eos magni atque
+        quisquam,</i
+      ><u
+        >delectus voluptatum fuga cumque rerum doloribus nesciunt recusandae
+        sequi? Nobis, ad consequatur.</u
+      >
+    </p>
+
+    <br />
+
+    <!-- 7. Anchor Tag = It is used to add links to their website.Now there are two types of links we can add the online links and the local links.It contains target attributes which is used to open the link in the different tab.You can also add image at the place of text.
+    e.g. : -->
+    <!--1. Absolute links -->
+    <a href="https://www.google.com" target="_blank">Google</a>
+    <!-- Here target attribute = Is the most important attribute used in the anchor tag.It generally have two values._self and _blank so, _self is the by default value of the target.It is used to open the href link in the same window.
+    But _blank = i sused to open the href link in the new window. -->
+    <br />
+    <!-- 2. Relative links -->
+    <a href="temp/temp.html">click</a>
+    <br />
+    <!-- 3. Link with email: -->
+    <a href="emailto:sahilKumar32755@gmail.com" target="_blank"
+      >Email To Sahil</a
+    >
+    <!-- 4. Link with the telephone: -->
+    <a href="tel:9878913571" target="_blank">Call Sahil</a>
+
+    <!-- 8.Image tag = It is used to add image in our website.It contains attributes src=used for storing the image link,alt=used for storing the alternative name need to display if link not work ,height=used to set height,width=used to set the width. -->
+    <img src="image.jpg" alt="Temp image" height="100" width="100" />
+
+    <!-- 9.Subscript and Superscript tag = These tag are used to give the below to the power and raise to the power,type contents respectively.
+    e.g.:-->
+    <!-- Subscript -->
+    <p>H<sub>2</sub>O</p>
+    <!-- superscript -->
+    <p>(A+B)<sup>2</sup></p>
+
+    <!-- 10. Big and small tag = It is used to display big and small text on your pages. e.g. : -->
+    <big>Big Tag</big>
+    <small>Small Tag</small>
+
+    <!--
+        Semantics tags = These tag are those tags whose meaning are clear from there name.
+        Some of the semantics tags are:
+        1.<header> tag = It is used to contain the header items.
+        2.<main> tag = Inside main tag we can also use some tags are:
+            (i) <section> tag = Used to add some section.
+            (ii) <article> tag = Used to add some articles.
+            (iii) <aside> tag = Used to add advertisement.
+        3.<footer> tag = Used to contain some footer items.
+
+        Note = It is recommended to build your website inside these semantic tags.
+
+        Non-semantics tags = These tags are those tags whose meaning are not clear from there name.
+        Some of the non-semantics tags are:
+        1. <div> tag = Basically div is a container which is used to contain other elements.It is a block level element.Block level elements are those elements which takes complete width of your screen.
+        2. <span> tag = It is similar to the div tag, it is also a container which is used to store the elements but it is a inline element.It means it only occupy the required space they need.
+    -->
+
+    <!-- e.g. : -->
+    <header>
+      <div>
+        <h3>Main</h3>
+        <h3>Menu</h3>
+        <h3>View</h3>
+      </div>
+    </header>
+    <main>
+      <section>
+        <p>Introduction Section.</p>
+      </section>
+      <article>My Story</article>
+      <aside>advertisement tag</aside>
+    </main>
+    <footer>
+      <span>Span tag</span>
+    </footer>
+
+    <br />
+    <hr />
+
+    <!-- 1. List = List is used to store the items in list format.There are two types of list in html ordered list and unordered list.-->
+
+    <!-- Unordered list: -->
+    <ul type="circle">
+      <!-- We can also set type = circle,square,disc,none-->
+      <li>Apple</li>
+      <ul>
+        <li>Color = Red</li>
+        <li>Season = Winters</li>
+      </ul>
+      <li>Mangoes</li>
+      <ul>
+        <li>Color = Yellow</li>
+        <li>Season = Summers</li>
+      </ul>
+      <li>Litchi</li>
+    </ul>
+
+    <!-- Ordered List: -->
+    <ol type="1">
+      <!-- We can also set different different type. e.g. = a,A,i,I,etc.-->
+      <li>Home</li>
+      <li>View</li>
+      <li>Menu</li>
+    </ol>
+
+    <hr />
+
+    <!-- 2. Tables = Table are used to store the data in the table format in html.It mostly contains five tags:
+    <tr> = Used to set row data.
+    <th> = Used to set heading data.
+    <td> = Used to set table data 
+    <thead> = Used to store the headings.
+    <tbody> = Used to store the body.
+    <tfoot> = Used to store the last data.
+    e.g. : -->
+
+    <table border="2">
+      <caption>
+        Temp Table:
+      </caption>
+      <!-- We can also add the caption in table.-->
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Roll no.</th>
+          <!-- 1. <th colspan="2">Information:</th> -->
+          <!-- We can also use colspan attribute to set the number of columns they occupy.-->
+          <!-- 2. <th rowspan="2">Information:</th> -->
+          <!-- We can also use rowspan attribute to set the number of rows they occupy. -->
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Sahil</td>
+          <td>5</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td>Count</td>
+          <td>1</td>
+        </tr>
+      </tfoot>
+    </table>
+
+    <br />
+    <hr />
+
+    <!-- Note = 1. Special Attributes = We have some special attributes to uniquely identify any one tag or group the tags.
+    (i) id attribute = It is used to uniquely identify any tag.One id is used only by one tag. 
+    (ii)  class attribute = It is used to group more than one tags with each other.More than one tags have same class.
+    e.g.:-->
+    <p id="1" class="temp">Temp1</p>
+    <p id="2" class="temp">Temp2</p>
+
+    <br />
+    <hr />
+
+    <!-- 3. Forms = Forms are used to collect data from the users.Inside form we mostly used to types of elements label tag and the input tag.It is recommended to use the input tag inside the label tag.-->
+
+    <form action="temp.js">
+      <!-- action attribute is used to define what action need to be performed when a form is submitted.-->
+
+      <!-- Now there are many types of input tag: -->
+
+      <label for="101">
+        Enter your Name:
+        <!-- for = id of input tag-->
+
+        <!-- 1. It is used to take text input from the user: -->
+        <input type="text" placeholder="Username" id="101" />
+      </label>
+      <br />
+
+      <label for="102">
+        <!-- for = id of input tag-->
+
+        <!-- 2. It is used to take password input from the user: -->
+        <input type="password" placeholder="Enter password" id="102" />
+      </label>
+      <br />
+
+      <label for="103">
+        <!-- for = id of input tag-->
+
+        <!-- 3. It is used to make radio button = In radio button insted of place holder we use value and name attribute.The value and the text need to be displayed need to be in a sink. -->
+        <input type="radio" value="class 10th" name="class" id="103" />class
+        10th
+      </label>
+      <label for="104">
+        <!-- for = id of input tag-->
+        <input type="radio" value="class 12th" name="class" id="104" />class
+        12th
+      </label>
+      <br />
+
+      <label for="105">
+        <!-- for = id of input tag-->
+
+        <!-- 4. It is used to make checkbox: -->
+        <input type="checkbox" value="agree" name="agree" id="105" />Agree
+      </label>
+      <br />
+
+      <label for="106">
+        <!-- for = id of input tag-->
+
+        <!-- 5. It is used to make text area: -->
+        <textarea
+          name="feedback"
+          id="106"
+          cols="30"
+          rows="10"
+          placeholder="feedback"
+        ></textarea>
+      </label>
+      <br />
+
+      <label for="107">
+        <!-- for = id of input tag-->
+
+        <!-- 6. It is used to make dropdown items: -->
+        <select name="city" id="107">
+          <option value="Delhi">Delhi</option>
+          <option value="Punjab">Punjab</option>
+          <option value="Bangaluru" selected>Bangaluru</option>
+          <option value="Mumbai">Mumbai</option>
+          <option value="Kolkata">Kolkata</option>
+        </select>
+      </label>
+      <br />
+
+      <label for="108">
+        <!-- for = id of input tag-->
+        <!-- 7. It is used to make submit button:-->
+        <input type="submit" name="button" id="108" />
+      </label>
+      <br />
+
+      <!-- Additional Input tag types: -->
+      <!-- 1. Used to take date and datetime = You can also add some attribute go to mdn references. -->
+      <br /><input type="date" />
+      <!-- 2. Used to take file = You can also add some attribute go to mdn references. -->
+      <br /><input type="file" />
+      <!-- 3. Used to take range = You can also add some attribute go to mdn references. -->
+      <br /><input type="range" />
+      <!-- 4. Used to take color = You can also add some attribute go to mdn references. -->
+      <br /><input type="color" />
+      <!-- 5. Used to create the normal button: -->
+      <br /><input type="button" value="click" />
+    </form>
+
+    <hr />
+    <!-- 4. iframe Tag =  It is basically used to embedded another html page in our current page.So that we can directly used from our website.-->
+
+    <iframe src="https://prepinstaprime.com/" height="500" width="500"
+      >PrepInsta Prime</iframe
+    >
+
+    <!-- Note = 1. We can also add the google maps and the youtube videos.The only thing we need to do is go to the google map or youtube find your relevent location or video respectively and after that go to share option and inside the share option find the embed option and copy the complete iframe from there.
+    -->
+    <!-- 2. We can also attach the achor tag with the iframe tag so that while clicking on the anchor tag the link or particular video automatically open in the iframe. -->
+    <iframe name="_openInFrame" frameborder="1"></iframe>
+    <a href="image.jpg" target="_openInFrame">Click</a>
+    <a href="Project1/image1.jpg" target="_openInFrame">Click</a>
+
+    <!-- 5. Video Tag = It is similar to the image tag but the only difference is,it is used to add the video content.-->
+    <!-- <video width="450" height="250" controls muted>
+      <source
+        src="https://media.geeksforgeeks.org/wp-content
+/uploads/20190616234019/Canvas.move_.mp4"
+        type="video/mp4"
+      />
+    </video>
+
+    <video width="450" height="250" controls preload="auto">
+      <source
+        src="https://media.geeksforgeeks.org/wp-content
+/uploads/20190616234019/Canvas.move_.mp4"
+        type="video/mp4"
+      />
+    </video> -->
+
+    <!-- Attributes of video tag:
+    1. Controls = It shows the default video controls like play, pause, volume, etc.
+    2. Muted = Used to mute the sound by default.
+    3. Loop = It tells the browser to automatically loop the video.
+    4. Autoplay = It tells the browser to immediately start downloading the video and play it as soon as it can.
+    5. Height and width = Used to set height and width of the video.-->
+
+    <!-- 6.Entity Reference = It is used to add some special characters in the html. 
+    e.g.: for space we have &nbms ,etc.-->
+
+    <!-- 7. Navbar tag = Basically navigation tag in html is used to represent the section of the page whose purpose is to provide the navigation links.Now the links can be either within the same documents or it can be the other documents links.It generally contains the ordered,unordered or achor tags. -->
+    <br />
+    <hr />
+    <nav>
+      <ol>
+        <li><a href="#1">Navbar</a></li>
+        <!-- we set the id of the tag. so that after click they visit to that point.-->
+        <li>Example</li>
+      </ol>
+    </nav>
+    <br />
+    <hr />
+
+    <!-- 8. fieldset tag = It is used to group the element in the form.It basically draw a box around the groped elements and can a capton provide them by using legend tag inide them.
+    e.g. :  -->
+    <fieldset>
+      <!-- You can also used the disabled attribute,but if you use the disabled attribute you will not be able to change the input field inside the form. -->
+      <legend align="center">This is fieldset tag:</legend>
+      Inside we can add forms,label or anything we need to group.
+      <form action="#">
+        <input type="text" />
+      </form>
+    </fieldset>
+
+    <!-- 9. figure tag = The <figure> tag is used to insert self-contained content such as illustrations, diagrams, photos, or code listings in a document. It can be placed at any position in the document and is related to the main flow. The content inside the <figure> tag goes with the flow of the document, so if it is removed, it won’t affect the flow of the document.
+    e.g. : -->
+    <figure>
+      <img src="image.jpg" alt="#" width="200" />
+      <figcaption>Image</figcaption>
+    </figure>
+
+    <!-- 10. strong,em,cite,blockqoute = Strong is used to reperesent the string importance,seriousness or urgencess text. 
+    em is used to represent the stress emphasis.
+    cite is used to represent the creative text that cite could be.e.g. = authore name,book name ,place name etc.
+    blockqoute is used to represent the extended qoute,visually it render as indentation. -->
+
+    <!--
+    Note = 1. Create you file under the basic html file format e.g. = header,main,footer.
+    2. After creating file format always try to thing about group your code using section and div tag. 
+    3. After that inside the section and div tag before implementing any content try to thing the appropriate tags you used to implement any specific content.
+    -->
+  </body>
+</html>

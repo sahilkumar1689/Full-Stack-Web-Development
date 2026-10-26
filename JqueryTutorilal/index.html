@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- jQuery UI CSS -->
+    <link
+      rel="stylesheet"
+      href="https://code.jquery.com/ui/1.13.2/themes/smoothness/jquery-ui.css"
+    />
+    <style>
+      #draggable {
+        /* transition: 0.3s; */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+      }
+    </style>
+
+    <title>Jquery</title>
+  </head>
+  <body>
+    <h1 class="heading">Hello World</h1>
+    <h1 class="heading">Hello World</h1>
+    <h1 class="heading">Hello World</h1>
+    <h1 class="heading">Hello World</h1>
+
+    <button class="btn">Click Me</button>
+    <div
+      id="box"
+      style="
+        display: none;
+        width: 100px;
+        height: 100px;
+        background: red;
+        position: absolute;
+      "
+    ></div>
+
+    <input type="text" id="inputBox" />
+
+    <div id="grandparent">
+      <div id="parent">
+        <p id="child">Child</p>
+        <p>Sibling 1</p>
+        <p>Sibling 2</p>
+      </div>
+    </div>
+
+    <!-- Drag and drop elements: -->
+    <div
+      id="draggable"
+      style="
+        width: 100px;
+        height: 100px;
+        background: skyblue;
+        text-align: center;
+        line-height: 100px;
+        cursor: move;
+      "
+    >
+      Drag me
+    </div>
+
+    <div
+      id="droppable"
+      style="
+        width: 150px;
+        height: 150px;
+        border: 2px dashed #555;
+        margin-top: 20px;
+        text-align: center;
+        line-height: 150px;
+      "
+    >
+      Drop here
+    </div>
+    <div
+      id="droppable1"
+      style="
+        width: 150px;
+        height: 150px;
+        border: 2px dashed #555;
+        margin-top: 20px;
+        text-align: center;
+        line-height: 150px;
+      "
+    >
+      Drop here
+    </div>
+  </body>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  <script src="index.js"></script>
+
+  <!-- jQuery UI -->
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+
+
+</html>

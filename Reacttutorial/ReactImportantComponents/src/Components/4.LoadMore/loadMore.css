@@ -1,0 +1,26 @@
+.loadingMoreContainer{
+    border: 2px solid black;
+    padding: 10px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+button{
+    display: block;
+    margin: auto;
+}
+
+.postContainer{
+    width: 25%;
+    height: 350px;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 10px;
+    text-align: justify;
+    border: 2px solid black;
+}

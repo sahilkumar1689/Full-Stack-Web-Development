@@ -1,0 +1,18 @@
+{
+    "name":"Node.js Tutorial",
+    "description":"This is a sample data object for Node.js file module.",
+    "version":"1.0.0",
+    "author":"Your Name",
+    "posts":[
+        {"id":"1",
+            "title":"First Post",
+            "body":"This is the body of the first post."
+        },
+        {"id":"2",
+        "title":"Second Post",
+        "body":"This is the body of the second post."
+        }
+    ]
+}
+
+

@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.parentContainer{
+  width: 100vw;
+  height: 100vh;
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.heading{
+  font-size: 5vw;
+}
+
+.para{
+  font-size: 30px;
+  margin: 10px;
+  text-align: center;
+}
+
+.time{
+  font-size: 30px;
+  margin: 10px;
+  text-align: center;
+}
+
+@media screen and (max-width:500px){
+  .heading{
+    font-size: 40px;
+  }
+  .para,.time{
+    font-size: 20px;
+  }
+}

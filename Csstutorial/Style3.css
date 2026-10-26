@@ -1,0 +1,101 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/* (viii) Position Property = The positioning property in css tells about the method of positioning of an element in the html.The element can be positioned by using the top,bottom,left,right property.These property specify the distance of element from the edge of the viewport.
+There are five different types of property in the css: */
+
+/* 1. Static = It is the by default positioning of any element in the html.In this the element is positioned with the normal flow of the page.In this property we can't set the top,bottom,left,right distance.*/
+
+/* 2. Relative = In the relative positioning the element will remain in the normal flow of the document but we can change the top,bottom,left,right distances and the element shifted from their original position and create a vacant space. In simple terms we can also say that in the relative positioning the element is relative to itself and they position themself w.r.t to their original position.*/
+
+/* #relative{
+    height: 150px;
+    width: 150px;
+    background-color: green;
+    padding: 10px;
+    margin: 10px;
+    position: relative;
+    top: 10px;
+    left:50px;
+} */
+
+/* 3. Absolute = In the absolute positioning the element will not remain in the normal flow of the document instead they position them self according to their nearest position ansector.Where the nearest position ansector means thier closest parent which is non-static. */
+
+/* #parent{
+    position: relative;   /* Parent position is non-static.The behaviour of child is w.r.t to parent.*/
+/* position: static;   Parent position is static.The behaviour of child is w.r.t to the upper parent or ancestor. */
+/* background-color: green;
+    height: 200px;
+    width: 2000px;
+    border:2px solid black; */
+/* }*/
+
+/*#absolute{
+    border: 2px solid black;
+    background-color: yellow;
+    height:100px;
+    width: 500px;
+    font-size:20px;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+} */
+
+/* 4. Fixed = In the fixed positioning the element will not follow the normal flow of the program they position it self w.r.t. to the html tags. In this positoning the element always fixed to the screen.*/
+/* #fixed{
+    height: 100px;
+    width: 100px;
+    background-color: green;
+    position: fixed;
+} */
+
+/* 5. Sticky = The sticky is the combination of two position i.e. relative and fixed.Normally they behave as a relative but at a particular offset value they bahave as sticky. */
+/* #sticky{
+    height: 100px;
+    width: 100px;
+    background-color: green;
+    position: sticky;
+    top: 0px;
+    margin-top: 50px;
+} */
+
+/* (ix) Background-images =  */
+#bg_image {
+  position: fixed;
+  top: 0px;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("https://images.unsplash.com/photo-1698611229097-cf0e2fc8ba81?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-size: cover;
+  /* Used to cover the image in a defined width and height.*/
+  /* background-size: contain; */
+  /* Used to containe the image in a defined width and height.It means the image can be repeate.*/
+}
+
+/* (x) z-index Property = It specify the stack order of an elements.An element with the greather stack order is always in front of an elements with the lower stack order.This property is only apply on the positioned elements. */
+/* #temp{
+    position: relative;
+    top: 10px;
+    color: white;
+    z-index: -1; 
+} */
+
+/* (xi) Overflow Property = In css the overflow property is used to controll the larger content which overflow from the container.It control the content either by hidding them,or either by providing the scroll bar. It has following values:
+1. hidden = Used to clipped the larger content.
+2. scroll = Used to clipped the larger content but also provide the scroll bar to access them.
+3. auto = Used to add the scroll bar from both the x-y axis.
+4. visible = Not clipped the large content visible to us.
+5.overflow-x and overflow-y = Deals with the overflow at elements axis. */
+#overflow {
+  border: 2px solid black;
+  width: 200px;
+  height: 200px;
+  overflow: scroll;
+  /* overflow:hidden;
+    overflow:auto;
+    overflow:visible;
+    overflow-y: scroll;
+    overflow-x: hidden; */
+}

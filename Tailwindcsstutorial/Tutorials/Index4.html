@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            keyframes: {
+              rotate: {
+                "0%": { transform: "rotate(0deg)" },
+                "50%": { "border-right-color": "#06B6D4" },
+                "100%": { transform: "rotate(360deg)" },
+              },
+            },
+            animation: {
+              rotate: "rotate 2s ease-in infinite",
+            },
+          },
+        },
+      };
+    </script>
+    <title>Index4</title>
+  </head>
+
+  <body>
+    <!-- 1. Transform Property :
+
+    (i) Translate Properties:
+    syntax:
+    class = "translate-x-specific_Value";
+    class = "translate-y-specific_Value";
+
+    (ii) Scale Property:
+    syntax:
+    class = "scale-x-specific_Value";
+    class = "scale-y-specific_Value";
+
+    (iii) Rotate Property:
+    syntax:
+    class = "rotate-specific_Value";
+    
+    (iv) Skew Property:
+    syntax:
+    class = "skew-x-specific_Value";
+    class = "skew-y-specific_Value"; 
+    -->
+
+    <!-- 2. Transition Utility = 
+    (i) Transiton Property = Used to control specific property of the element to apply transition on.
+    syntax:
+    class = "transition-specific_Value" e.g. all,height,width,opacity,etc.
+
+    (ii) Transition Duration = Used to control the duration.
+    syntax:
+    class = "duration-specific_value";
+
+    (iii) Transition Timing Function = Used to control timing function.
+    syntax:
+    class = "ease-linear or in or out or in-out";
+
+    (iv) Transition Delay = Used to control the delay.
+    syntax:
+    class = "delay-specific_Value";
+    -->
+
+    <!-- 3. Animation = In tailwind we have prebuild animation.
+    syntax:
+    class = "animate-spin or ping or bounce or rotate"
+
+    You can also make your own custom animation see head tag.
+    -->
+
+    <div
+      class="size-[100px] border-[16px] border-solid border-[rgb(241, 204, 204)] rounded-[50%] border-t-cyan-500 animate-rotate"
+    ></div>
+  </body>
+</html>
